@@ -1,0 +1,21 @@
+.name-page {
+    height: 148px;
+    background: #F8F3F4;
+
+    &__block-caption {
+        @include flex-align-items-center();
+        height: 100%;
+
+        @include mobile-landscape-style() {
+            justify-content: center;
+        }
+    }
+    
+    &__main-caption {
+        font-size: 24px;
+        text-transform: uppercase;
+        line-height: 29px;
+        color: $pink-color-caption;
+    }
+}
+
